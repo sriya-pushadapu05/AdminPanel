@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="AdminPanel Suite">
+
+    <!-- Listener for Screenshot + Extent Report -->
+    <listeners>
+        <listener class-name="com.srm.listeners.TestListener"/>
+    </listeners>
+
+    <test name="All Tests">
+
+        <classes>
+            <class name="com.srm.tests.FormTest"/>
+            <class name="com.srm.tests.TableTest"/>
+            <class name="com.srm.tests.AlertTest"/>
+            <class name="com.srm.tests.DynamicTest"/>
+            <class name="com.srm.tests.FrameTest"/>
+        </classes>
+
+    </test>
+
+</suite>
